@@ -38,7 +38,9 @@ $(document).ready(function () {
         resumeContainer.append("<h5 class='card-title'>Skills</h5>");
         data.skills.forEach(skill => {
             resumeContainer.append(`
+            <div class='col-md-6'>
                 <p class='card-interests'>${skill}</p>
+            </div>
             `);
         });
 
