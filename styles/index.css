@@ -1,0 +1,46 @@
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #000;
+  color: #fff;
+}
+
+.card-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.card {
+  border: none;
+  color: #fff;
+}
+
+.card-1 {
+  background-color: #2a2a2a;
+}
+
+.card-2 {
+  background-color: #000;
+}
+
+.card-title {
+  margin: 2rem 0 0 0;
+}
+
+.card-text {
+  line-height: 2;
+}
+
+.card-interests {
+  margin: 0;
+}
+
+.card-info {
+  margin: 0;
+}
+
+.btn {
+  border: 1px solid #00ff00;
+  background-color: none;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

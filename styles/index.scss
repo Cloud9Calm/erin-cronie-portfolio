@@ -1,0 +1,48 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: $main-background-color;
+    color: $font-color;
+}
+
+.card-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.card {
+    border: none;
+    color: $font-color;
+}
+
+.card-1 {
+    background-color: $secondary-background-color;
+}
+
+.card-2 {
+    background-color: $main-background-color;
+}
+
+.card-title {
+    margin: 2rem 0 0 0;
+}
+
+.card-text {
+    line-height: 2;
+}
+
+.card-interests {
+    margin: 0;
+}
+
+.card-info {
+    margin: 0;
+}
+
+.btn {
+    @include buttons;
+}

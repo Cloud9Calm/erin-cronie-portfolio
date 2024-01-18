@@ -1,0 +1,20 @@
+{
+    "projects": [
+    {
+        "title": "Erin Cronie",
+        "description": "More information about myself",
+        "techStack": ["Bootstrap", "JQuery", "Sass"]
+        },
+      {
+        "title": "Naramata Vineyard",
+        "description": "Still in production - A Bed and Breakfast booking application",
+        "techStack": ["JavaScript", "React", "Google Cloud Deployment"]
+      },
+      {
+        "title": "Shop Cloud9 Calm",
+        "description": "Still in production - Shopify Store",
+        "techStack": ["Shopify", "Liquid Templating Language", "Shopify APIs"]
+      }
+    ]
+  }
+  
