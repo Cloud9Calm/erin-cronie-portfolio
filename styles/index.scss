@@ -59,6 +59,20 @@ body {
     @include buttons;
 }
 
+.btn-hide {
+    display: none;
+    @include tablet {
+        display: contents;
+    }
+}
+
+.btn-top {
+    display: contents;
+    @include tablet {
+        display: none;
+    }
+}
+
 #projects-container,
 #resume-container,
 #social-media {
