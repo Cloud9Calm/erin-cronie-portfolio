@@ -63,7 +63,8 @@ body {
 }
 
 #projects-container,
-#resume-container {
+#resume-container,
+#social-media {
     margin: 6rem 0;
 }
 
@@ -79,4 +80,12 @@ body {
     background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
     pointer-events: none;
     transform: translate(-40%, -40%);
+}
+
+.svg {
+    height: 6rem;
+    margin: 1rem;
+}
+svg:hover{
+    transition: fill 0.3s ease;
 }
