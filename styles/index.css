@@ -63,6 +63,24 @@ body {
   color: #fff;
 }
 
+.btn-hide {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .btn-hide {
+    display: contents;
+  }
+}
+
+.btn-top {
+  display: contents;
+}
+@media (min-width: 48rem) {
+  .btn-top {
+    display: none;
+  }
+}
+
 #projects-container,
 #resume-container,
 #social-media {
