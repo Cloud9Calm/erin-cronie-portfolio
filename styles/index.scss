@@ -80,6 +80,41 @@ body {
     background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
     pointer-events: none;
     transform: translate(-40%, -40%);
+
+    /* For WebKit Browsers (Chrome, Safari) */
+/* It won't work in Firefox */
+
+/* Track */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle when it's on the top or bottom */
+  ::-webkit-scrollbar-button {
+    background-color: #aaa;
+  }
+  
+  /* Handle on hover when it's on the top or bottom */
+  ::-webkit-scrollbar-button:hover {
+    background-color: #888;
+  }
+  
 }
 
 .svg {
@@ -89,3 +124,4 @@ body {
 svg:hover{
     transition: fill 0.3s ease;
 }
+
