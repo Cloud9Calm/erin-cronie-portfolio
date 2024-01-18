@@ -26,19 +26,19 @@ $(document).ready(function () {
             `);
         });
 
-        // Displays skills
-        resumeContainer.append("<h5 class='card-title'>Skills</h5>");
-        data.skills.forEach(skill => {
-            resumeContainer.append(`
-                <p class='card-interests'>${skill}</p>
-            `);
-        });
-
         // Displays certifications
         resumeContainer.append("<h5 class='card-title'>Certifications</h5>");
         data.certifications.forEach(cert => {
             resumeContainer.append(`
                 <p class='card-info'>${cert.name} from ${cert.organization} (${cert.year})</p>
+            `);
+        });
+
+        // Displays skills
+        resumeContainer.append("<h5 class='card-title'>Skills</h5>");
+        data.skills.forEach(skill => {
+            resumeContainer.append(`
+                <p class='card-interests'>${skill}</p>
             `);
         });
 
