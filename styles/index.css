@@ -1,0 +1,77 @@
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.profile-img {
+  height: 30vh;
+  margin: auto 0;
+  border-radius: 5px;
+}
+
+.card-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.card {
+  border: none;
+  color: #fff;
+}
+
+.card-1 {
+  background: linear-gradient(to right, #0c594a, #000);
+}
+
+.card-2 {
+  background-color: #000;
+}
+
+.custom-scrollable {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.card-title {
+  margin: 2rem 0 0 0;
+}
+
+.card-text {
+  line-height: 2;
+}
+
+.card-interests {
+  margin: 1rem 2rem;
+}
+
+.card-info {
+  margin: 2rem;
+}
+
+.btn {
+  border: 1px solid #9e49ab;
+  background-color: none;
+  color: #fff;
+}
+
+#projects-container,
+#resume-container {
+  margin: 6rem 0;
+}
+
+.project {
+  margin: 2rem;
+}
+
+#mouse-follower {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
+  pointer-events: none;
+  transform: translate(-40%, -40%);
+}/*# sourceMappingURL=index.css.map */
