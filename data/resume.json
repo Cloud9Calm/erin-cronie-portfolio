@@ -43,20 +43,6 @@
         "duration": "October 2015 to October 2019"
       }
     ],
-    "skills": [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Sass",
-      "Bootstrap",
-      "React",
-      "Node.js",
-      "Express.js",
-      "Knex.js",
-      "APIs",
-      "MySQL"
-
-    ],
     "certifications": [
       {
         "name": "Software Engineer Diploma",
@@ -80,4 +66,3 @@
       "Music"
     ]
   }
-  

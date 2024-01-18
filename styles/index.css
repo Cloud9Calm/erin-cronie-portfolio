@@ -25,14 +25,20 @@ body {
 .card-1 {
   background: linear-gradient(to right, #0c594a, #000);
 }
+@media (min-width: 48rem) {
+  .card-1 {
+    position: sticky;
+  }
+}
 
 .card-2 {
   background-color: #000;
 }
-
-.custom-scrollable {
-  max-height: 100vh;
-  overflow-y: auto;
+@media (min-width: 48rem) {
+  .card-2 {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
 }
 
 .card-title {

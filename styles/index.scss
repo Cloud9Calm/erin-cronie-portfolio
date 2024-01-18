@@ -27,16 +27,19 @@ body {
 }
 
 .card-1 {
-    background: linear-gradient(to right, #0c594a, #000);}
+    background: linear-gradient(to right, #0c594a, #000);
+    @include tablet {
+        position: sticky;
+    }
+}
 
 .card-2 {
     background-color: $main-background-color;
-}
+    @include tablet {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
 
-.custom-scrollable {
-    max-height: 100vh;
-    overflow-y: auto;
-    
 }
 
 .card-title {
