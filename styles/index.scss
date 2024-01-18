@@ -11,7 +11,6 @@ body {
     }
 }
  
-
 .profile-img {
     height: 30vh;
     margin: auto 0;
@@ -74,7 +73,7 @@ body {
     height: 6rem;
     margin: 1rem;
 }
-svg:hover{
+svg::hover{
     transition: fill 0.3s ease;
 }
 
@@ -83,9 +82,9 @@ svg:hover{
     width: 50rem;
     height: 50rem;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 0%, transparent 90%);
+    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 0%, transparent 40%);
     pointer-events: none;
-    transform: translate(-40%, -40%);
+    transform: translate(-50%, -50%);
 
 /* For WebKit Browsers (Chrome, Safari) */
 /* Track */
