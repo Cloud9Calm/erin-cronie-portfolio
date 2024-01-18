@@ -2,6 +2,7 @@ body {
   font-family: "Fira Code", monospace;
   background-color: #000;
   color: #fff;
+  overflow: hidden;
 }
 
 .profile-img {
@@ -29,6 +30,11 @@ body {
   background-color: #000;
 }
 
+.custom-scrollable {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
 .card-title {
   margin: 2rem 0 0 0;
 }
@@ -46,7 +52,7 @@ body {
 }
 
 .btn {
-  border: 1px solid #00ff00;
+  border: 1px solid #205e7a;
   background-color: none;
   color: #fff;
 }
@@ -58,4 +64,14 @@ body {
 
 .project {
   margin: 2rem;
+}
+
+#mouse-follower {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
+  pointer-events: none;
+  transform: translate(-40%, -40%);
 }/*# sourceMappingURL=index.css.map */

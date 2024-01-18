@@ -5,6 +5,7 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: $main-background-color;
     color: $font-color;
+    overflow: hidden;
 }
 
 .profile-img {
@@ -31,6 +32,12 @@ body {
 
 .card-2 {
     background-color: $main-background-color;
+}
+
+.custom-scrollable {
+    max-height: 100vh;
+    overflow-y: auto;
+    
 }
 
 .card-title {
@@ -60,4 +67,14 @@ body {
 
 .project {
     margin: 2rem;
+}
+
+#mouse-follower {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
+    pointer-events: none;
+    transform: translate(-40%, -40%);
 }
