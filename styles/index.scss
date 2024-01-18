@@ -5,8 +5,12 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: $main-background-color;
     color: $font-color;
-    overflow: hidden;
+    overflow: auto;
+    @include tablet {
+        overflow: hidden;
+    }
 }
+ 
 
 .profile-img {
     height: 30vh;
@@ -31,6 +35,7 @@ body {
     @include tablet {
         max-height: 100vh;
         overflow-y: auto;
+        overflow: auto;
     }
 
 }
