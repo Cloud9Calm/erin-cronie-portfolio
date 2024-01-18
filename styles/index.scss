@@ -14,13 +14,6 @@ body {
     border-radius: 5px;
 }
 
-.card-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
 .card {
     border: none;
     color: $font-color;
@@ -72,51 +65,6 @@ body {
     margin: 2rem;
 }
 
-#mouse-follower {
-    position: absolute;
-    width: 50rem;
-    height: 50rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
-    pointer-events: none;
-    transform: translate(-40%, -40%);
-
-    /* For WebKit Browsers (Chrome, Safari) */
-/* It won't work in Firefox */
-
-/* Track */
-::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle when it's on the top or bottom */
-  ::-webkit-scrollbar-button {
-    background-color: #aaa;
-  }
-  
-  /* Handle on hover when it's on the top or bottom */
-  ::-webkit-scrollbar-button:hover {
-    background-color: #888;
-  }
-  
-}
-
 .svg {
     height: 6rem;
     margin: 1rem;
@@ -124,4 +72,48 @@ body {
 svg:hover{
     transition: fill 0.3s ease;
 }
+
+#mouse-follower {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 0%, transparent 90%);
+    pointer-events: none;
+    transform: translate(-40%, -40%);
+
+/* For WebKit Browsers (Chrome, Safari) */
+/* Track */
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: $main-background-color;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: $main-background-color;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $main-background-color;
+  }
+  
+  /* Handle when it's on the top or bottom */
+  ::-webkit-scrollbar-button {
+    background-color: $main-background-color;
+  }
+  
+  /* Handle on hover when it's on the top or bottom */
+  ::-webkit-scrollbar-button:hover {
+    background-color: $main-background-color;
+  }
+  
+}
+
+
 
