@@ -1,0 +1,79 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: $main-background-color;
+    color: $font-color;
+    overflow: hidden;
+}
+
+.profile-img {
+    height: 30vh;
+    margin: auto 0;
+    border-radius: 5px;
+}
+
+.card-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.card {
+    border: none;
+    color: $font-color;
+}
+
+.card-1 {
+    background: linear-gradient(to right, #0c594a, #000);}
+
+.card-2 {
+    background-color: $main-background-color;
+}
+
+.custom-scrollable {
+    max-height: 100vh;
+    overflow-y: auto;
+    
+}
+
+.card-title {
+    margin: 2rem 0 0 0;
+}
+
+.card-text {
+    line-height: 2;
+}
+
+.card-interests {
+    margin: 1rem 2rem;
+}
+
+.card-info {
+    margin: 2rem;
+}
+
+.btn {
+    @include buttons;
+}
+
+#projects-container,
+#resume-container {
+    margin: 6rem 0;
+}
+
+.project {
+    margin: 2rem;
+}
+
+#mouse-follower {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
+    pointer-events: none;
+    transform: translate(-40%, -40%);
+}

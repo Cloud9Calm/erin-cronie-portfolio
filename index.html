@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Erin Cronie's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/logo-nobackground.png" type="image/x-icon">
+</head>
+<body>
+    
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Welcome</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <!-- Content for the first container -->
+                <div class="card card-1 card-sticky">
+                    <div class="card-body">
+                        <img class="profile-img" src="./assets/images/17_Erin-Cronie---Software-Engineering---Sep-2023.jpg" alt="Profile picture of Erin Cronie">
+
+                        <h1 class="card-title">Erin Cronie</h1>
+                        <h4 class="card-subtitle pb-4">Aspiring Software Engineer</h4>
+                        <p class="card-text">
+                            Code artisan in the making, I'm scripting my journey with a dash of creativity, a byte of passion, and a sprinkle of tech magic.
+                        </p>
+
+                        <!-- Buttons to jump to sections in the second container -->
+                        <div class="d-flex flex-column flex-md-row justify-content-between mt-3">
+                            <a href="#resume-container" class="btn mb-2 mb-md-0">Resume</a>
+                            <a href="#projects-container" class="btn mb-2 mb-md-0">Projects</a>
+                            <a href="#top" class="btn mb-2 mb-md-0">Top of Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Content for the second container -->
+                <div class="card card-2 custom-scrollable">
+                    <div class="card-body">
+                        <h5 class="card-title pb-4" id="top">More about my background</h5>
+                        <p class="card-text">
+                            Embarking on a transformation journey from the picturesque vineyards of the wine industry to the dynamic realm of technology was a leap of passion and reinvention. The pivotal moment arrived when I secured a role with Shopify and Shopify Plus Support, unveiling to me the fascinating world of code.
+                        </p>
+                        <p class="card-text">
+                            Navigating the complexities of e-commerce and digital solutions, my role at Shopify became the catalyst for a profound shift in my career trajectory. Through dedicated support, mentorship, and hands-on experiences, I not only embraced the language of code but also discovered a profound love for the intricacies of web development.
+                        </p>
+                        <p class="card-text">
+                            The synergy of my background in the wine industry and newfound tech expertise has uniquely shaped my approach to problem-solving and innovation. Today, as I continue to navigate this thrilling intersection of creativity and technology, I find joy in crafting digital experiences that resonate with the same artistry and attention to detail as a perfectly aged vintage
+                        </p>
+
+                        <!-- resume content -->
+                        <div id="resume-container">
+                            <h2 class="card-title">Resume</h2>  
+                            <a href="./assets/images/Erin-Cronie-Resume.pdf" download="Erin_Cronie_Resume.pdf" class="btn">Click here to download a copy</a>
+
+                        </div>
+
+                        <!-- projects content -->
+                        <div id="projects-container"></div>
+
+                        <!-- social media content -->
+                        <div id="social-media">
+                            <h2 class="card-title">Social Media</h2>
+                            <h4 class="card-subtitle">Let's connect!</h4>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mt-3">
+                                <a href="https://www.linkedin.com/in/erin-cronie/" class="btn mb-2 mb-md-0" target="_blank">LinkedIn</a>
+                                <a href="https://github.com/erincronie" class="btn mb-2 mb-md-0" target="_blank">GitHub</a>
+                                <a href="https://www.instagram.com/cloud9calm/" class="btn mb-2 mb-md-0" target="_blank">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mouse-follower"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scripts/resume.js" defer></script>
+    <script src="./scripts/mouse.js"></script>
+</body>
+</html>

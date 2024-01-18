@@ -1,0 +1,83 @@
+{
+    "name": "Erin Cronie",
+    "title": "Aspiring Software Engineer",
+    "contact": {
+      "email": "erincronie@gmail.com"
+    },
+    "education": [
+      {
+        "study": "BrainStation",
+        "degree": "Software Engineer Diploma",
+        "year": "2023"
+      },
+      {
+        "study": "Team Treehouse",
+        "degree": "Web Development Certificate",
+        "year": "2024"
+      }
+    ],
+    "experience": [
+      {
+        "jobTitle": "Software Developer Teacher's Assistant",
+        "company": "BrainStation",
+        "duration": "Winter 2023/2024"
+      },
+      {
+        "jobTitle": "Shopify Plus Specialist",
+        "company": "Shopify Plus",
+        "duration": "August 2021 to July 2023"
+      },
+      {
+        "jobTitle": "Shopify Specialist",
+        "company": "Shopify",
+        "duration": "February 2021 to August 2021"
+      },
+      {
+        "jobTitle": "General Manager",
+        "company": "Mile Zero Wine Bar",
+        "duration": "September 2015 to January 2020"
+      },
+      {
+        "jobTitle": "Sales Agent",
+        "company": "Whistler Tree Wines",
+        "duration": "October 2015 to October 2019"
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Bootstrap",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Knex.js",
+      "APIs",
+      "MySQL"
+
+    ],
+    "certifications": [
+      {
+        "name": "Software Engineer Diploma",
+        "organization": "BrainStation",
+        "year": "2023"
+      },
+      {
+        "name": "Web Development Certificate",
+        "organization": "Team Treehouse",
+        "year": "2024"
+      }
+     
+    ],
+    "interests": [
+      "Coding",
+      "Reading",
+      "Golf",
+      "Video Games",
+      "Wine",
+      "Cooking",
+      "Music"
+    ]
+  }
+  
