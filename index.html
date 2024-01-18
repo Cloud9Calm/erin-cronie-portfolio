@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/logo-nobackground.png" type="image/x-icon">
 </head>
 <body>
+    
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand">Welcome</a>
@@ -28,20 +30,19 @@
                 <!-- Content for the first container -->
                 <div class="card card-1 card-sticky">
                     <div class="card-body">
+                        <img class="profile-img" src="./assets/images/17_Erin-Cronie---Software-Engineering---Sep-2023.jpg" alt="Profile picture of Erin Cronie">
+
                         <h1 class="card-title">Erin Cronie</h1>
                         <h4 class="card-subtitle pb-4">Aspiring Software Engineer</h4>
                         <p class="card-text">
                             Code artisan in the making, I'm scripting my journey with a dash of creativity, a byte of passion, and a sprinkle of tech magic.
                         </p>
 
-                        <div>
-                            <img class="profile-img" src="./assets/images/17_Erin-Cronie---Software-Engineering---Sep-2023.jpg" alt="Profile picture of Erin Cronie">
-                        </div>
                         <!-- Buttons to jump to sections in the second container -->
                         <div class="d-flex flex-column flex-md-row justify-content-between mt-3">
                             <a href="#resume-container" class="btn mb-2 mb-md-0">Resume</a>
                             <a href="#projects-container" class="btn mb-2 mb-md-0">Projects</a>
-                            <a href="#social-media" class="btn mb-2 mb-md-0">Social Links</a>
+                            <a href="#top" class="btn mb-2 mb-md-0">Top of Page</a>
                         </div>
                     </div>
                 </div>
@@ -49,9 +50,9 @@
 
             <div class="col-md-6">
                 <!-- Content for the second container -->
-                <div class="card card-2">
+                <div class="card card-2 custom-scrollable">
                     <div class="card-body">
-                        <h5 class="card-title pb-4">More about my background</h5>
+                        <h5 class="card-title pb-4" id="top">More about my background</h5>
                         <p class="card-text">
                             Embarking on a transformation journey from the picturesque vineyards of the wine industry to the dynamic realm of technology was a leap of passion and reinvention. The pivotal moment arrived when I secured a role with Shopify and Shopify Plus Support, unveiling to me the fascinating world of code.
                         </p>
@@ -63,7 +64,11 @@
                         </p>
 
                         <!-- resume content -->
-                        <div id="resume-container"></div>
+                        <div id="resume-container">
+                            <h2 class="card-title">Resume</h2>  
+                            <a href="./assets/images/Erin-Cronie-Resume.pdf" download="Erin_Cronie_Resume.pdf" class="btn">Click here to download a copy</a>
+
+                        </div>
 
                         <!-- projects content -->
                         <div id="projects-container"></div>
@@ -83,8 +88,11 @@
             </div>
         </div>
     </div>
+
+    <div id="mouse-follower"></div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./scripts/resume.js" defer></script>
+    <script src="./scripts/mouse.js"></script>
 </body>
 </html>

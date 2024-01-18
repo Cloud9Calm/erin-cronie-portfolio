@@ -2,7 +2,6 @@ $(document).ready(function () {
     $.getJSON("data/resume.json", function (data) {
         // Displays resume title
         const resumeContainer = $("#resume-container");
-        resumeContainer.append("<h2 class='card-title'>Resume</h2>");
 
         // Displays basic information
         $(".card-3 .card-body").html(`
@@ -52,7 +51,7 @@ $(document).ready(function () {
         });
     });
 });
-
+ 
 
 fetch('data/projects.json')
     .then(response => response.json())
