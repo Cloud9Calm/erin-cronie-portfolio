@@ -11,12 +11,6 @@ body {
   border-radius: 5px;
 }
 
-.card-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
 .card {
   border: none;
   color: #fff;
@@ -73,16 +67,6 @@ body {
   margin: 2rem;
 }
 
-#mouse-follower {
-  position: absolute;
-  width: 50rem;
-  height: 50rem;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
-  pointer-events: none;
-  transform: translate(-40%, -40%);
-}
-
 .svg {
   height: 6rem;
   margin: 1rem;
@@ -90,4 +74,39 @@ body {
 
 svg:hover {
   transition: fill 0.3s ease;
+}
+
+#mouse-follower {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 0%, transparent 90%);
+  pointer-events: none;
+  transform: translate(-40%, -40%);
+  /* For WebKit Browsers (Chrome, Safari) */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  /* Track */
+  /* Handle when it's on the top or bottom */
+  /* Handle on hover when it's on the top or bottom */
+}
+#mouse-follower ::-webkit-scrollbar {
+  width: 1rem;
+}
+#mouse-follower ::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+#mouse-follower ::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+}
+#mouse-follower ::-webkit-scrollbar-track {
+  background: #000;
+}
+#mouse-follower ::-webkit-scrollbar-button {
+  background-color: #000;
+}
+#mouse-follower ::-webkit-scrollbar-button:hover {
+  background-color: #000;
 }/*# sourceMappingURL=index.css.map */
