@@ -26,14 +26,6 @@ $(document).ready(function () {
             `);
         });
 
-        // Displays certifications
-        resumeContainer.append("<h5 class='card-title'>Certifications</h5>");
-        data.certifications.forEach(cert => {
-            resumeContainer.append(`
-                <p class='card-info'>${cert.name} from ${cert.organization} (${cert.year})</p>
-            `);
-        });
-
         // Displays interests
         resumeContainer.append("<h5 class='card-title'>Interests</h5>");
         data.interests.forEach(interest => {
