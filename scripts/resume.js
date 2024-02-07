@@ -40,11 +40,10 @@ $(document).ready(function () {
 fetch('data/projects.json')
     .then(response => response.json())
     .then(data => {
-        // Displays projects on the page
         const projectsContainer = document.getElementById('projects-container');
 
         const projectsTitle = document.createElement('h2');
-        projectsTitle.textContent = "Projects";
+        projectsTitle.textContent = "Personal Projects";
         projectsContainer.appendChild(projectsTitle);
 
         data.projects.forEach(project => {

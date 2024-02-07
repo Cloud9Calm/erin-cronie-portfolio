@@ -24,6 +24,7 @@ body {
 
 .card-1 {
     background: linear-gradient(to right, #0c594a, #000);
+    border-radius: 0 !important;
     @include tablet {
         position: sticky;
     }
