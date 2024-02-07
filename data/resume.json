@@ -6,13 +6,18 @@
     },
     "education": [
       {
+        "study": "Mimo",
+        "degree": "Web Development",
+        "year": "2023"
+      },
+      {
         "study": "BrainStation",
         "degree": "Software Engineer Diploma",
         "year": "2023"
       },
       {
         "study": "Team Treehouse",
-        "degree": "Web Development Certificate",
+        "degree": "Front End Development Techdegree",
         "year": "2024"
       }
     ],
