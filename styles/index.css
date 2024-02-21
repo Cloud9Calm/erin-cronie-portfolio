@@ -2,19 +2,18 @@ body {
   font-family: "Fira Code", monospace;
   background-color: #000;
   color: #fff;
-  overflow: hidden;
+  overflow: auto;
+}
+@media (min-width: 48rem) {
+  body {
+    overflow: hidden;
+  }
 }
 
 .profile-img {
   height: 30vh;
   margin: auto 0;
   border-radius: 5px;
-}
-
-.card-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .card {
@@ -25,14 +24,21 @@ body {
 .card-1 {
   background: linear-gradient(to right, #0c594a, #000);
 }
+@media (min-width: 48rem) {
+  .card-1 {
+    position: sticky;
+  }
+}
 
 .card-2 {
   background-color: #000;
 }
-
-.custom-scrollable {
-  max-height: 100vh;
-  overflow-y: auto;
+@media (min-width: 48rem) {
+  .card-2 {
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow: auto;
+  }
 }
 
 .card-title {
@@ -57,8 +63,28 @@ body {
   color: #fff;
 }
 
+.btn-hide {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .btn-hide {
+    display: contents;
+  }
+}
+
+.btn-top {
+  display: contents;
+}
+@media (min-width: 48rem) {
+  .btn-top {
+    display: none;
+  }
+}
+
 #projects-container,
-#resume-container {
+#resume-container,
+#social-media,
+#team-treehouse {
   margin: 6rem 0;
 }
 
@@ -66,12 +92,46 @@ body {
   margin: 2rem;
 }
 
+.svg {
+  height: 6rem;
+  margin: 1rem;
+}
+
+svg::hover {
+  transition: fill 0.3s ease;
+}
+
 #mouse-follower {
   position: absolute;
   width: 50rem;
   height: 50rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
+  background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 5%, transparent 70%);
   pointer-events: none;
-  transform: translate(-40%, -40%);
+  transform: translate(-50%, -50%);
+  /* For WebKit Browsers (Chrome, Safari) */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  /* Track */
+  /* Handle when it's on the top or bottom */
+  /* Handle on hover when it's on the top or bottom */
+}
+#mouse-follower ::-webkit-scrollbar {
+  width: 1rem;
+}
+#mouse-follower ::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+#mouse-follower ::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+}
+#mouse-follower ::-webkit-scrollbar-track {
+  background: #000;
+}
+#mouse-follower ::-webkit-scrollbar-button {
+  background-color: #000;
+}
+#mouse-follower ::-webkit-scrollbar-button:hover {
+  background-color: #000;
 }/*# sourceMappingURL=index.css.map */

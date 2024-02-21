@@ -26,22 +26,6 @@ $(document).ready(function () {
             `);
         });
 
-        // Displays certifications
-        resumeContainer.append("<h5 class='card-title'>Certifications</h5>");
-        data.certifications.forEach(cert => {
-            resumeContainer.append(`
-                <p class='card-info'>${cert.name} from ${cert.organization} (${cert.year})</p>
-            `);
-        });
-
-        // Displays skills
-        resumeContainer.append("<h5 class='card-title'>Skills</h5>");
-        data.skills.forEach(skill => {
-            resumeContainer.append(`
-                <p class='card-interests'>${skill}</p>
-            `);
-        });
-
         // Displays interests
         resumeContainer.append("<h5 class='card-title'>Interests</h5>");
         data.interests.forEach(interest => {
@@ -56,11 +40,10 @@ $(document).ready(function () {
 fetch('data/projects.json')
     .then(response => response.json())
     .then(data => {
-        // Displays projects on the page
         const projectsContainer = document.getElementById('projects-container');
 
         const projectsTitle = document.createElement('h2');
-        projectsTitle.textContent = "Projects";
+        projectsTitle.textContent = "Personal Projects";
         projectsContainer.appendChild(projectsTitle);
 
         data.projects.forEach(project => {
@@ -70,6 +53,7 @@ fetch('data/projects.json')
             projectElement.innerHTML = `
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
+                <p>${project.url}</p>
                 <p>Tech Stack: ${project.techStack.join(', ')}</p>
             `;
 

@@ -5,20 +5,16 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: $main-background-color;
     color: $font-color;
-    overflow: hidden;
+    overflow: auto;
+    @include tablet {
+        overflow: hidden;
+    }
 }
-
+ 
 .profile-img {
     height: 30vh;
     margin: auto 0;
     border-radius: 5px;
-}
-
-.card-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 .card {

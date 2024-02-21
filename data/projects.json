@@ -2,7 +2,12 @@
     "projects": [
     {
         "title": "Erin Cronie",
+<<<<<<< HEAD
         "description": "More information about myself",
+=======
+        "description": "Resume and projects page",
+        "url": "erincronie.me",
+>>>>>>> 50111a83bfe8359c1fbc158c4aa6b1a505b4d8f8
         "techStack": ["Bootstrap", "JQuery", "Sass"]
         },
       {
@@ -12,6 +17,10 @@
       },
       {
         "title": "Shop Cloud9 Calm",
+<<<<<<< HEAD
+=======
+        "url": "shopcloud9calm.com",
+>>>>>>> 50111a83bfe8359c1fbc158c4aa6b1a505b4d8f8
         "description": "Still in production - Shopify Store",
         "techStack": ["Shopify", "Liquid Templating Language", "Shopify APIs"]
       }
