@@ -12,8 +12,8 @@ body {
 
 .profile-img {
   height: 30vh;
-  margin: auto 0;
-  border-radius: 5px;
+  margin: 1rem;
+  border-radius: 50%;
 }
 
 .card {
@@ -93,7 +93,7 @@ body {
 }
 
 .svg {
-  height: 6rem;
+  height: 3rem;
   margin: 1rem;
 }
 

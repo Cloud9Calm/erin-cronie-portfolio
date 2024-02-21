@@ -1,3 +1,4 @@
+
 @import './partials/variables';
 @import './partials/mixins';
 
@@ -13,8 +14,8 @@ body {
  
 .profile-img {
     height: 30vh;
-    margin: auto 0;
-    border-radius: 5px;
+    margin: 1rem;
+    border-radius: 50%;
 }
 
 .card {
@@ -23,16 +24,20 @@ body {
 }
 
 .card-1 {
-    background: linear-gradient(to right, #0c594a, #000);}
+    background: linear-gradient(to right, #0c594a, #000);
+    @include tablet {
+        position: sticky;
+    }
+}
 
 .card-2 {
     background-color: $main-background-color;
-}
+    @include tablet {
+        max-height: 100vh;
+        overflow-y: auto;
+        overflow: auto;
+    }
 
-.custom-scrollable {
-    max-height: 100vh;
-    overflow-y: auto;
-    
 }
 
 .card-title {
@@ -55,8 +60,24 @@ body {
     @include buttons;
 }
 
+.btn-hide {
+    display: none;
+    @include tablet {
+        display: contents;
+    }
+}
+
+.btn-top {
+    display: contents;
+    @include tablet {
+        display: none;
+    }
+}
+
 #projects-container,
-#resume-container {
+#resume-container,
+#social-media,
+#team-treehouse  {
     margin: 6rem 0;
 }
 
@@ -65,7 +86,7 @@ body {
 }
 
 .svg {
-    height: 2rem;
+    height: 3rem;
     margin: 1rem;
 }
 svg::hover{
@@ -77,7 +98,39 @@ svg::hover{
     width: 50rem;
     height: 50rem;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 10%, transparent 90%);
+    background: radial-gradient(circle, rgba(50, 138, 145, 0.2) 5%, transparent 70%);
     pointer-events: none;
-    transform: translate(-40%, -40%);
+    transform: translate(-50%, -50%);
+
+/* For WebKit Browsers (Chrome, Safari) */
+/* Track */
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: $main-background-color;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: $main-background-color;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $main-background-color;
+  }
+  
+  /* Handle when it's on the top or bottom */
+  ::-webkit-scrollbar-button {
+    background-color: $main-background-color;
+  }
+  
+  /* Handle on hover when it's on the top or bottom */
+  ::-webkit-scrollbar-button:hover {
+    background-color: $main-background-color;
+  }
+  
 }
