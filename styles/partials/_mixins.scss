@@ -1,0 +1,19 @@
+@import '../partials/variables';
+
+@mixin buttons {
+    border: 1px solid $border;
+    background-color: none;
+    color: $font-color
+}
+
+@mixin tablet {  
+    @media (min-width: $tablet) {
+      @content;
+    }
+  }
+
+@mixin desktop {  
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
