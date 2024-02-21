@@ -64,6 +64,14 @@ body {
     margin: 2rem;
 }
 
+.svg {
+    height: 2rem;
+    margin: 1rem;
+}
+svg::hover{
+    transition: fill 0.3s ease;
+}
+
 #mouse-follower {
     position: absolute;
     width: 50rem;
